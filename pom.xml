@@ -55,6 +55,7 @@
         <springboot.version>2.2.9.RELEASE</springboot.version>
         <springfox.version>2.9.2</springfox.version>
         <websocket-tyrus.version>1.17</websocket-tyrus.version>
+        <metricscore.version>3.2.6</metricscore.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -65,6 +66,12 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
                 <version>${logback.version}</version>
+            </dependency>
+            <!-- downgrade of metrics-core needed for compatibility with cassandra-driver < 4 . To remove when we upgrade to >4 -->
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-core</artifactId>
+                <version>${metricscore.version}</version>
             </dependency>
 
             <!-- imports -->
