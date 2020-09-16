@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2020, RTE (http://www.rte-france.com)
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.powsybl</groupId>
+        <artifactId>powsybl</artifactId>
+        <version>3</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>org.gridsuite</groupId>
+    <artifactId>gridsuite-dependencies</artifactId>
+    <version>1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>GridSuite Dependencies</name>
+    <description>GridSuite Dependencies</description>
+    <url>https://www.gridsuite.org/</url>
+
+    <developers>
+        <developer>
+            <name>Jon Harper</name>
+            <email>jon.harper@rte-france.com</email>
+            <organization>RTE</organization>
+            <organizationUrl>http://www.rte-france.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/gridsuite/gridsuite-dependencies.git</connection>
+        <developerConnection>scm:git:https://github.com/gridsuite/gridsuite-dependencies.git</developerConnection>
+        <url>https://github.com/gridsuite/gridsuite-dependencies/tree/master/</url>
+    </scm>
+
+    <properties>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <!-- overrides of imports -->
+
+            <!-- imports -->
+
+            <!-- gridsuite specific dependencies (still overrides imports) -->
+        </dependencies>
+    </dependencyManagement>
+
+</project>
