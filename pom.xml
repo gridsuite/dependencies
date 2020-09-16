@@ -45,6 +45,7 @@
 
     <properties>
         <embedded-cassandra.version>3.0.3</embedded-cassandra.version>
+        <junit.version>4.13</junit.version>
         <logback.version>1.1.8</logback.version>
         <powsybl-core.version>3.6.0</powsybl-core.version>
         <powsybl-open-loadflow.version>0.6.0</powsybl-open-loadflow.version>
@@ -72,6 +73,12 @@
                 <groupId>io.dropwizard.metrics</groupId>
                 <artifactId>metrics-core</artifactId>
                 <version>${metricscore.version}</version>
+            </dependency>
+            <!-- to remove when powsybl upgrades to 4.13 -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
             </dependency>
 
             <!-- imports -->
