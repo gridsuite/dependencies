@@ -49,12 +49,12 @@
         <logback.version>1.1.8</logback.version>
         <lombok.version>1.18.12</lombok.version>
         <powsybl-case-datasource-client.version>1.0.0-SNAPSHOT</powsybl-case-datasource-client.version>
-        <powsybl-core.version>3.6.0</powsybl-core.version>
-        <powsybl-rte-core.version>2.13.0</powsybl-rte-core.version>
-        <powsybl-open-loadflow.version>0.6.0</powsybl-open-loadflow.version>
+        <powsybl-core.version>3.7.1</powsybl-core.version>
+        <powsybl-rte-core.version>2.14.1</powsybl-rte-core.version>
+        <powsybl-open-loadflow.version>0.7.0</powsybl-open-loadflow.version>
         <powsybl-balances-adjustment.version>1.2.2</powsybl-balances-adjustment.version>
         <powsybl-network-store.version>1.0.0-SNAPSHOT</powsybl-network-store.version>
-        <powsybl-single-line-diagram.version>1.7.0</powsybl-single-line-diagram.version>
+        <powsybl-single-line-diagram.version>1.7.2</powsybl-single-line-diagram.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <springboot.version>2.2.9.RELEASE</springboot.version>
         <springdoc-openapi.version>1.4.8</springdoc-openapi.version>
@@ -377,6 +377,12 @@
                 <groupId>com.powsybl</groupId>
                 <artifactId>powsybl-commons</artifactId>
                 <version>${powsybl-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-commons</artifactId>
+                <version>${powsybl-core.version}</version>
+                <type>test-jar</type>
             </dependency>
             <dependency>
                 <groupId>com.powsybl</groupId>
