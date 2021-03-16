@@ -21,7 +21,7 @@
 
     <groupId>org.gridsuite</groupId>
     <artifactId>gridsuite-dependencies</artifactId>
-    <version>5-SNAPSHOT</version>
+    <version>5</version>
     <packaging>pom</packaging>
 
     <name>GridSuite Dependencies</name>
@@ -49,14 +49,14 @@
         <lombok.version>1.18.12</lombok.version>
         <mock.web.server.version>4.6.0</mock.web.server.version>
         <powsybl-case-datasource-client.version>1.0.0-SNAPSHOT</powsybl-case-datasource-client.version>
-        <powsybl-core.version>3.8.0</powsybl-core.version>
-        <powsybl-rte-core.version>2.15.0</powsybl-rte-core.version>
-        <powsybl-open-loadflow.version>0.8.0</powsybl-open-loadflow.version>
+        <powsybl-core.version>4.0.1</powsybl-core.version>
+        <powsybl-rte-core.version>3.0.0</powsybl-rte-core.version>
+        <powsybl-open-loadflow.version>0.9.0</powsybl-open-loadflow.version>
         <powsybl-balances-adjustment.version>1.2.2</powsybl-balances-adjustment.version>
         <powsybl-network-store.version>1.0.0-SNAPSHOT</powsybl-network-store.version>
-        <powsybl-single-line-diagram.version>1.8.0</powsybl-single-line-diagram.version>
-        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
-        <springboot.version>2.2.9.RELEASE</springboot.version>
+        <powsybl-single-line-diagram.version>2.0.0</powsybl-single-line-diagram.version>
+        <spring-cloud.version>2020.0.2</spring-cloud.version>
+        <springboot.version>2.4.3</springboot.version>
         <springdoc-openapi.version>1.4.8</springdoc-openapi.version>
         <springfox.version>2.9.2</springfox.version>
         <websocket-tyrus.version>1.17</websocket-tyrus.version>
@@ -65,13 +65,6 @@
     <dependencyManagement>
         <dependencies>
             <!-- overrides of imports -->
-
-            <!-- downgrade of metrics-core needed for compatibility with cassandra-driver < 4 . To remove when we upgrade to >4 -->
-            <dependency>
-                <groupId>io.dropwizard.metrics</groupId>
-                <artifactId>metrics-core</artifactId>
-                <version>${metricscore.version}</version>
-            </dependency>
 
             <!-- 4.13.1 is incompatible with spring-boot-starter-test.To remove once fixed https://github.com/spring-projects/spring-boot/issues/23876 -->
             <dependency>
