@@ -55,7 +55,7 @@
         <powsybl-balances-adjustment.version>1.2.2</powsybl-balances-adjustment.version>
         <powsybl-network-store.version>1.0.0-SNAPSHOT</powsybl-network-store.version>
         <powsybl-single-line-diagram.version>2.0.0</powsybl-single-line-diagram.version>
-        <spring-cloud.version>2020.0.2</spring-cloud.version>
+        <spring-cloud.version>2020.0.1</spring-cloud.version>
         <springboot.version>2.4.3</springboot.version>
         <springdoc-openapi.version>1.4.8</springdoc-openapi.version>
         <springfox.version>2.9.2</springfox.version>
