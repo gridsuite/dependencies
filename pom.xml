@@ -59,7 +59,6 @@
         <spring-cloud.version>2020.0.3</spring-cloud.version>
         <springboot.version>2.4.7</springboot.version>
         <springdoc-openapi.version>1.4.8</springdoc-openapi.version>
-        <springfox.version>2.9.2</springfox.version>
         <websocket-tyrus.version>1.17</websocket-tyrus.version>
         <metricscore.version>3.2.6</metricscore.version>
     </properties>
@@ -121,16 +120,6 @@
                 <version>${mock.web.server.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${springfox.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${springfox.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.powsybl</groupId>
                 <artifactId>powsybl-case-datasource-client</artifactId>
                 <version>${powsybl-case-datasource-client.version}</version>
@@ -145,7 +134,11 @@
                 <artifactId>springdoc-openapi-webflux-ui</artifactId>
                 <version>${springdoc-openapi.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc-openapi.version}</version>
+            </dependency>
             <!-- powsybl open load flow -->
             <dependency>
                 <groupId>com.powsybl</groupId>
