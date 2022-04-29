@@ -44,24 +44,17 @@
     </scm>
 
     <properties>
-        <embedded-cassandra.version>3.0.3</embedded-cassandra.version>
-        <junit.version>4.13</junit.version>
         <lombok.version>1.18.12</lombok.version>
         <mock.web.server.version>4.6.0</mock.web.server.version>
+        <powsybl-dependencies.version>1.1.0</powsybl-dependencies.version>
         <powsybl-case-datasource-client.version>1.0.0-SNAPSHOT</powsybl-case-datasource-client.version>
-        <powsybl-core.version>4.7.0</powsybl-core.version>
-        <powsybl-rte-core.version>3.7.0</powsybl-rte-core.version>
-        <powsybl-open-loadflow.version>0.18.0</powsybl-open-loadflow.version>
-        <powsybl-balances-adjustment.version>1.11.0</powsybl-balances-adjustment.version>
         <powsybl-network-store.version>1.0.0-SNAPSHOT</powsybl-network-store.version>
-        <powsybl-single-line-diagram.version>2.9.1</powsybl-single-line-diagram.version>
-        <powsybl-dynawo.version>1.7.0</powsybl-dynawo.version>
+        <powsybl-rte-core.version>3.8.0</powsybl-rte-core.version>
         <powsybl-ws-commons.version>1.1.0</powsybl-ws-commons.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
         <springboot.version>2.6.6</springboot.version>
         <springdoc-openapi.version>1.5.13</springdoc-openapi.version>
         <websocket-tyrus.version>1.17</websocket-tyrus.version>
-        <metricscore.version>3.2.6</metricscore.version>
         <jackson.version>2.13.2.20220328</jackson.version>
         <commons-lang3.version>3.9</commons-lang3.version>
     </properties>
@@ -91,8 +84,8 @@
             <!-- imports -->
             <dependency>
                 <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-core</artifactId>
-                <version>${powsybl-core.version}</version>
+                <artifactId>powsybl-dependencies</artifactId>
+                <version>${powsybl-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -109,11 +102,6 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
             </dependency>
 
             <!-- project specific dependencies (also overrides imports, but separate for clarity) -->
@@ -138,6 +126,11 @@
                 <version>${websocket-tyrus.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-webflux-ui</artifactId>
                 <version>${springdoc-openapi.version}</version>
@@ -146,19 +139,6 @@
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-ui</artifactId>
                 <version>${springdoc-openapi.version}</version>
-            </dependency>
-            <!-- powsybl open load flow -->
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-open-loadflow</artifactId>
-                <version>${powsybl-open-loadflow.version}</version>
-            </dependency>
-
-            <!-- powsybl balances adjustment -->
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-balances-adjustment</artifactId>
-                <version>${powsybl-balances-adjustment.version}</version>
             </dependency>
 
             <!-- powsybl ws commons -->
@@ -190,102 +170,6 @@
                 <groupId>com.powsybl</groupId>
                 <artifactId>powsybl-network-store-model</artifactId>
                 <version>${powsybl-network-store.version}</version>
-            </dependency>
-
-            <!-- powsybl-single-line-diagram multimodule (no bom) -->
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-single-line-diagram-cgmes-dl-conversion</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-single-line-diagram-cgmes-iidm-extensions</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-single-line-diagram-cgmes-layout</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-single-line-diagram-color</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-single-line-diagram-core</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-single-line-diagram-force-layout</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-single-line-diagram-iidm-extensions</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
-            </dependency>
-
-            <!-- powsybl-dynawo multimodule (no bom) -->
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynawo-commons</artifactId>
-                <version>${powsybl-dynawo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynaflow</artifactId>
-                <version>${powsybl-dynawo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynawaltz</artifactId>
-                <version>${powsybl-dynawo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynawaltz-dsl</artifactId>
-                <version>${powsybl-dynawo.version}</version>
-            </dependency>
-
-            <!-- embedded cassandra multimodule (no bom) -->
-            <dependency>
-                <groupId>com.github.nosan</groupId>
-                <artifactId>embedded-cassandra-spring-test</artifactId>
-                <version>${embedded-cassandra.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.nosan</groupId>
-                <artifactId>embedded-cassandra-junit4-test</artifactId>
-                <version>${embedded-cassandra.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.nosan</groupId>
-                <artifactId>embedded-cassandra</artifactId>
-                <version>${embedded-cassandra.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.nosan</groupId>
-                <artifactId>embedded-cassandra-api</artifactId>
-                <version>${embedded-cassandra.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.nosan</groupId>
-                <artifactId>embedded-cassandra-annotations</artifactId>
-                <version>${embedded-cassandra.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.nosan</groupId>
-                <artifactId>embedded-cassandra-commons</artifactId>
-                <version>${embedded-cassandra.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.nosan</groupId>
-                <artifactId>embedded-cassandra-mock</artifactId>
-                <version>${embedded-cassandra.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
