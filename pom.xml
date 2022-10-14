@@ -62,9 +62,15 @@
             <!-- powsybl rte core multimodule (no bom) -->
             <dependency>
                 <groupId>com.rte-france.powsybl</groupId>
+                <artifactId>powsybl-courcirc-integration</artifactId>
+                <version>${powsybl-rte-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rte-france.powsybl</groupId>
                 <artifactId>powsybl-hades2-integration</artifactId>
                 <version>${powsybl-rte-core.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
