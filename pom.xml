@@ -44,7 +44,7 @@
     </scm>
 
     <properties>
-        <powsybl-ws-dependencies.version>2.0.0</powsybl-ws-dependencies.version>
+        <powsybl-ws-dependencies.version>2.1.0-SNAPSHOT</powsybl-ws-dependencies.version>
         <powsybl-rte-core.version>3.11.0</powsybl-rte-core.version>
     </properties>
 
