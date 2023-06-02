@@ -15,7 +15,7 @@
     <parent>
         <groupId>com.powsybl</groupId>
         <artifactId>powsybl</artifactId>
-        <version>8</version>
+        <version>11</version>
         <relativePath/>
     </parent>
 
@@ -44,7 +44,7 @@
     </scm>
 
     <properties>
-        <powsybl-ws-dependencies.version>2.2.1</powsybl-ws-dependencies.version>
+        <powsybl-ws-dependencies.version>2.3.0</powsybl-ws-dependencies.version>
         <powsybl-rte-core.version>3.13.0</powsybl-rte-core.version>
     </properties>
 
