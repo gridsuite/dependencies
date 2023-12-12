@@ -45,7 +45,6 @@
 
     <properties>
         <powsybl-ws-dependencies.version>2.6.0</powsybl-ws-dependencies.version>
-        <powsybl-rte-core.version>4.1.0</powsybl-rte-core.version>
     </properties>
 
     <dependencyManagement>
@@ -57,13 +56,6 @@
                 <version>${powsybl-ws-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <!-- powsybl rte core multimodule (no bom) -->
-            <dependency>
-                <groupId>com.rte-france.powsybl</groupId>
-                <artifactId>powsybl-hades2-integration</artifactId>
-                <version>${powsybl-rte-core.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
