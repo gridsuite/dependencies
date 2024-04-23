@@ -44,7 +44,8 @@
     </scm>
 
     <properties>
-        <powsybl-ws-dependencies.version>2.6.0</powsybl-ws-dependencies.version>
+        <powsybl-ws-dependencies.version>2.9.0</powsybl-ws-dependencies.version>
+        <gridsuite-filter.version>1.0.4</gridsuite-filter.version>
     </properties>
 
     <dependencyManagement>
@@ -56,6 +57,12 @@
                 <version>${powsybl-ws-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.gridsuite</groupId>
+                <artifactId>gridsuite-filter</artifactId>
+                <version>${gridsuite-filter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
