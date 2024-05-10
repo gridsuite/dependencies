@@ -45,7 +45,7 @@
 
     <properties>
         <powsybl-ws-dependencies.version>2.10.0-SNAPSHOT</powsybl-ws-dependencies.version>
-        <gridsuite-filter.version>1.0.4</gridsuite-filter.version>
+        <gridsuite-filter.version>1.0.5</gridsuite-filter.version>
     </properties>
 
     <dependencyManagement>
