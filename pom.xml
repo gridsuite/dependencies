@@ -21,7 +21,7 @@
 
     <groupId>org.gridsuite</groupId>
     <artifactId>gridsuite-dependencies</artifactId>
-    <version>30</version>
+    <version>31-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>GridSuite Dependencies</name>
