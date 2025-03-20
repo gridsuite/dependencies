@@ -15,7 +15,7 @@
     <parent>
         <groupId>com.powsybl</groupId>
         <artifactId>powsybl</artifactId>
-        <version>8</version>
+        <version>22</version>
         <relativePath/>
     </parent>
 
@@ -46,6 +46,7 @@
     <properties>
         <powsybl-ws-dependencies.version>2.20.0</powsybl-ws-dependencies.version>
         <gridsuite-filter.version>1.2.0</gridsuite-filter.version>
+        <network-modification.version>0.9.0</network-modification.version>
     </properties>
 
     <dependencyManagement>
@@ -63,6 +64,12 @@
                 <groupId>org.gridsuite</groupId>
                 <artifactId>gridsuite-filter</artifactId>
                 <version>${gridsuite-filter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.gridsuite</groupId>
+                <artifactId>gridsuite-network-modification</artifactId>
+                <version>${network-modification.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
