@@ -46,7 +46,7 @@
     <properties>
         <powsybl-ws-dependencies.version>2.21.0-SNAPSHOT</powsybl-ws-dependencies.version>
         <gridsuite-filter.version>1.4.0-SNAPSHOT</gridsuite-filter.version>
-        <network-modification.version>0.13.0-SNAPSHOT</network-modification.version>
+        <network-modification.version>0.15.0-SNAPSHOT</network-modification.version>
     </properties>
 
     <dependencyManagement>
