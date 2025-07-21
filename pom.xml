@@ -21,7 +21,7 @@
 
     <groupId>org.gridsuite</groupId>
     <artifactId>gridsuite-dependencies</artifactId>
-    <version>42.1.0</version>
+    <version>42.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>GridSuite Dependencies</name>
@@ -44,9 +44,9 @@
     </scm>
 
     <properties>
-        <powsybl-ws-dependencies.version>2.22.1</powsybl-ws-dependencies.version>
-        <gridsuite-filter.version>1.5.0</gridsuite-filter.version>
-        <network-modification.version>0.24.0</network-modification.version>
+        <powsybl-ws-dependencies.version>2.23.0</powsybl-ws-dependencies.version>
+        <gridsuite-filter.version>1.6.0</gridsuite-filter.version>
+        <network-modification.version>0.26.0</network-modification.version>
         <gridsuite-computation.version>1.0.0</gridsuite-computation.version>
     </properties>
 
