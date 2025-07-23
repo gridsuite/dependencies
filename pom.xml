@@ -47,6 +47,7 @@
         <powsybl-ws-dependencies.version>2.23.0</powsybl-ws-dependencies.version>
         <gridsuite-filter.version>1.6.0</gridsuite-filter.version>
         <network-modification.version>0.26.0</network-modification.version>
+        <gridsuite-computation.version>1.0.0</gridsuite-computation.version>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +71,11 @@
                 <groupId>org.gridsuite</groupId>
                 <artifactId>gridsuite-network-modification</artifactId>
                 <version>${network-modification.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.gridsuite</groupId>
+                <artifactId>gridsuite-computation</artifactId>
+                <version>${gridsuite-computation.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
