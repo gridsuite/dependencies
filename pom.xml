@@ -44,7 +44,7 @@
     </scm>
 
     <properties>
-        <powsybl-ws-dependencies.version>2.28.0</powsybl-ws-dependencies.version>
+        <powsybl-ws-dependencies.version>2.29.0</powsybl-ws-dependencies.version>
         <gridsuite-filter.version>1.13.0</gridsuite-filter.version>
         <network-modification.version>0.48.0</network-modification.version>
         <gridsuite-computation.version>1.6.0</gridsuite-computation.version>
