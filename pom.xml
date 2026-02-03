@@ -48,6 +48,7 @@
         <gridsuite-filter.version>1.19.0</gridsuite-filter.version>
         <network-modification.version>0.60.0</network-modification.version>
         <gridsuite-computation.version>1.10.0</gridsuite-computation.version>
+        <gridsuite-actions.version>0.1.0</gridsuite-actions.version>
     </properties>
 
     <dependencyManagement>
@@ -76,6 +77,11 @@
                 <groupId>org.gridsuite</groupId>
                 <artifactId>gridsuite-computation</artifactId>
                 <version>${gridsuite-computation.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.gridsuite</groupId>
+                <artifactId>gridsuite-actions</artifactId>
+                <version>${gridsuite-actions.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
