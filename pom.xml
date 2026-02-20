@@ -47,7 +47,7 @@
         <powsybl-ws-dependencies.version>2.30.0</powsybl-ws-dependencies.version>
         <gridsuite-filter.version>1.21.0</gridsuite-filter.version>
         <network-modification.version>0.60.0</network-modification.version>
-        <gridsuite-computation.version>1.10.0</gridsuite-computation.version>
+        <gridsuite-computation.version>1.12.0</gridsuite-computation.version>
         <gridsuite-actions.version>0.3.0</gridsuite-actions.version>
     </properties>
 
