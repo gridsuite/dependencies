@@ -44,11 +44,11 @@
     </scm>
 
     <properties>
-        <powsybl-ws-dependencies.version>2.32.0</powsybl-ws-dependencies.version>
-        <gridsuite-filter.version>1.22.0</gridsuite-filter.version>
-        <network-modification.version>0.80.0</network-modification.version>
-        <gridsuite-computation.version>2.2.0</gridsuite-computation.version>
-        <gridsuite-actions.version>0.6.0</gridsuite-actions.version>
+        <powsybl-ws-dependencies.version>2.33.0-SNAPSHOT</powsybl-ws-dependencies.version>
+        <gridsuite-filter.version>1.27.0-SNAPSHOT</gridsuite-filter.version>
+        <network-modification.version>1.2.0-SNAPSHOT</network-modification.version>
+        <gridsuite-computation.version>2.4.0-SNAPSHOT</gridsuite-computation.version>
+        <gridsuite-actions.version>0.8.0-SNAPSHOT</gridsuite-actions.version>
     </properties>
 
     <dependencyManagement>
