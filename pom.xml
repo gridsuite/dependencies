@@ -89,11 +89,6 @@
                 <artifactId>gridsuite-powsybl-extras</artifactId>
                 <version>${gridsuite-powsybl-extras.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.gridsuite</groupId>
-                <artifactId>gridsuite-powsybl-extras</artifactId>
-                <version>${gridsuite-powsybl-extras.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
