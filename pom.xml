@@ -49,6 +49,7 @@
         <network-modification.version>1.4.0</network-modification.version>
         <gridsuite-computation.version>2.5.0</gridsuite-computation.version>
         <gridsuite-actions.version>0.9.0</gridsuite-actions.version>
+        <gridsuite-powsybl-extras.version>0.1.0</gridsuite-powsybl-extras.version>
     </properties>
 
     <dependencyManagement>
@@ -82,6 +83,11 @@
                 <groupId>org.gridsuite</groupId>
                 <artifactId>gridsuite-actions</artifactId>
                 <version>${gridsuite-actions.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.gridsuite</groupId>
+                <artifactId>gridsuite-powsybl-extras</artifactId>
+                <version>${gridsuite-powsybl-extras.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
